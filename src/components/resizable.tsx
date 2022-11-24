@@ -58,10 +58,8 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
    }
    
    return (
-      <ResizableBox {...resizableProps}>
-         { children }
-      </ResizableBox>
-   ); 
+      <ResizableBox {...resizableProps}>{ children }</ResizableBox>
+   );
 };
 
 export default Resizable;
