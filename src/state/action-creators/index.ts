@@ -5,8 +5,6 @@ import {
    DeleteCellAction,
    MoveCellAction,
    InsertCellAfterAction, 
-   BundleStartAction,
-   BundleCompleteAction,
    Direction,
    Action
 } from "../actions";
@@ -53,7 +51,7 @@ export const insertCellAfter = (
    };
 };
 
-export const createBunle = (cellId: string, input: string) => {
+export const createBundle = (cellId: string, input: string) => {
    return async (dispatch: Dispatch<Action>) => {
       dispatch({
          type: ActionType.BUNDLE_START,
